@@ -1,0 +1,40 @@
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background-color: #1e293b; /* Bleu foncé */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.sidebar-logo {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #38bdf8; /* Bleu clair */
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.sidebar-menu li:hover {
+  background-color: #334155; /* Survol */
+  border-radius: 5px;
+}
+
+.icon {
+  font-size: 18px;
+}
