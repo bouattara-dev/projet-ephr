@@ -1,21 +1,32 @@
 import React from 'react';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Sidebar from './components/Sidebar/Sidebar';
 import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import Dashboard from './page/Dashboard/Dashboard';
+import About from './page/About/About';
+import RendezVous from './page/RendezVous';
 
+import './App.css';
 
 function App() {
   return (
-    <div className="app">
-      <Sidebar />
-      <div className="main-content">
-        <Header />
-        <div className="page-content">
-        {/* On ajoutera le reste ici plus tard */}
-        <h1>Bienvenue sur le tableau de bord EPHR</h1>
-         </div>
+    <Router>
+      <div className="app-layout">
+        <Sidebar />
+        <div className="main-layout">
+          <Header />
+          <div className="page-content">
+            <Routes>
+              <Route path="/" element={<Dashboard />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/rendez-vous" element={<RendezVous />} />
+            </Routes>
+          </div>
+          <Footer />
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 

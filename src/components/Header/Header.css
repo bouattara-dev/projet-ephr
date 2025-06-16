@@ -1,30 +1,33 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 220px; /* adapte si la largeur de ton Sidebar est différente */
+  right: 0;
+  height: 60px;
+  background-color: #1e293b;
+  color: white;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
-  padding: 1rem 2rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  border-bottom: 1px solid #e2e8f0;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .header-title {
-  font-size: 24px;
-  color: #1e293b;
+  font-size: 20px;
 }
 
 .header-user {
   display: flex;
   align-items: center;
-  gap: 10px;
 }
 
 .user-icon {
   font-size: 24px;
-  color: #0ea5e9;
+  margin-right: 8px;
 }
 
 .username {
-  font-weight: 500;
-  color: #334155;
+  font-weight: bold;
 }

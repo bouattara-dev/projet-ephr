@@ -1,6 +1,6 @@
-import React from 'react';
 import './Sidebar.css';
-import { FaHome, FaUserMd, FaUsers, FaCogs } from 'react-icons/fa';
+import { FaHome, FaUserMd, FaUsers, FaCogs, FaCalendarCheck, FaInfoCircle } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 function Sidebar() {
   return (
@@ -11,19 +11,27 @@ function Sidebar() {
       <ul className="sidebar-menu">
         <li>
           <FaHome className="icon" />
-          <span>Tableau de bord</span>
+          <Link to="/">Tableau de bord</Link>
         </li>
         <li>
           <FaUsers className="icon" />
-          <span>Patients</span>
+          <Link to="/patients">Patients</Link>
         </li>
         <li>
           <FaUserMd className="icon" />
-          <span>Utilisateurs</span>
+          <Link to="/users">Utilisateurs</Link>
+        </li>
+        <li>
+          <FaCalendarCheck className="icon" />
+          <Link to="/rendez-vous">Rendez-vous</Link>
         </li>
         <li>
           <FaCogs className="icon" />
-          <span>Paramètres</span>
+          <Link to="/settings">Paramètres</Link>
+        </li>
+        <li>
+          <FaInfoCircle className="icon" />
+          <Link to="/about">À propos</Link>
         </li>
       </ul>
     </div>

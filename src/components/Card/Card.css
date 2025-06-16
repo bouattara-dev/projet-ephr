@@ -1,0 +1,30 @@
+.card {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  gap: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.card-icon {
+  font-size: 32px;
+}
+
+.card-title {
+  font-size: 14px;
+  color: #64748b;
+  margin: 0;
+}
+
+.card-value {
+  font-size: 24px;
+  color: #1e293b;
+  margin: 0;
+}
